@@ -1,0 +1,21 @@
+{
+  "items": {
+    "type": "object",
+    "properties": {
+      "question": {
+        "type": "string"
+      },
+      "answers": {
+        "type": "object",
+        "minProperties": 1,
+        "errorMessage": {
+          "minProperties": "There have to be atleast one correct answer"
+        }
+      },
+      "correctAnswer": {
+        "type": "string"
+      }
+    },
+    "required": ["question", "answers", "correctAnswer"]
+  }
+}
